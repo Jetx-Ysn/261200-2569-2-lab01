@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class main {
-        public static void main(String[] args){
+        void main(){
             Scanner s = new Scanner(System.in);
             IO.print("Enter the number of integers (n):");
             int n = s.nextInt();
@@ -27,7 +26,7 @@ public class main {
             s.close();
         }
 
-        public static void sortArray(int[] arr){
+        void sortArray(int[] arr){
             for(int i=0; i<arr.length; i++){
                 for(int j=i+1; j< arr.length; j++){
                     if(arr[i] > arr[j]){
@@ -38,4 +37,3 @@ public class main {
                 }
             }
         }
-}
